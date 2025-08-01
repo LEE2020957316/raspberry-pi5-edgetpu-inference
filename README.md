@@ -10,3 +10,10 @@ We present a unified benchmarking and deployment framework for running multiple 
   - Model 1: 64×64 grayscale (trained on the FER+ dataset)  
   - Model 2: 112×112 RGB (based on the MobileFaceNet architecture)
 
+
+## 🔧 Features
+
+- Dual-Python architecture using ZeroMQ (Python 3.11 for camera + Python 3.9 for TPU inference)
+- Real-time camera processing at up to 10.9 FPS (FD+FER, 112×112)
+- Edge TPU acceleration using PyCoral and precompiled `.edgetpu.tflite` models
+- Supports multiple faces per frame, with scalable FER throughput
