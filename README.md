@@ -26,5 +26,14 @@ This dual-process pipeline resolves version incompatibility between the Picamera
 
 ## 📂 Repository Structure
 
+
+## 🚀 Quick Start
+1. **Set up environments**
+
+   - Python **3.11**: used for camera capture and display (main system Python on Raspberry Pi 5)
+   - Python **3.9 (virtual environment)**: used for Edge TPU inference (required by PyCoral runtime)
+
+   > ⚠️ PyCoral only provides prebuilt wheels for Python 3.9. Make sure to create a dedicated virtual environment for inference.
+
 📊 Performance Summary
 
