@@ -25,7 +25,10 @@ We present a unified benchmarking and deployment framework for running multiple 
 This dual-process pipeline resolves version incompatibility between the Picamera2 library (Python 3.11) and the PyCoral runtime (Python 3.9), while ensuring low-latency communication and real-time feedback.
 
 ## 📂 Repository Structure
-
+├── models/            # Precompiled .tflite and .edgetpu.tflite models
+├── scripts/           # Python scripts for real-time inference and static tests
+├── images/            # Sample test images 
+└── README.md          # This file
 
 ## 🚀 Quick Start
 1. **Set up environments**
