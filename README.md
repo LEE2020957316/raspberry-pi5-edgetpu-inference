@@ -41,4 +41,15 @@ This dual-process pipeline resolves version incompatibility between the Picamera
    > ⚠️ PyCoral only provides prebuilt wheels for Python 3.9. Make sure to create a dedicated virtual environment for inference.
 
 📊 Performance Summary
+| Model         | CPU FPS | TPU FPS |
+| ------------- | ------- | ------- |
+| MobileNetV2   | 56.7    | 225.9   |
+| Face Detector | 29.3    | 122.5   |
+| FER (112×112) | 36.2    | 201.4   |
+| FER (64×64)   | 53.4    | 154.6   |
 
+Real-time pipeline (single face):
+
+FD + FER (112×112): 10.9 FPS
+
+FD + FER (64×64): 8.7 FPS
