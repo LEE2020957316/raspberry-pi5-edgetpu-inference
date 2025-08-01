@@ -28,7 +28,7 @@ This dual-process pipeline resolves version incompatibility between the Picamera
 
 ```
 ├── models/              # Precompiled .tflite and .edgetpu.tflite models  
-├── scripts/             # Python scripts for real-time inference and static tests  
+├── Scripts/             # Python scripts for real-time inference and static tests  
 ├── images/              # Sample test images  
 └── README.md            # This file
 ```
