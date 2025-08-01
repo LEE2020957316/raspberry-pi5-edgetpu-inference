@@ -41,6 +41,7 @@ This dual-process pipeline resolves version incompatibility between the Picamera
    > ⚠️ PyCoral only provides prebuilt wheels for Python 3.9. Make sure to create a dedicated virtual environment for inference.
 
 📊 Performance Summary
+
 | Model         | CPU FPS | TPU FPS |
 | ------------- | ------- | ------- |
 | MobileNetV2   | 56.7    | 225.9   |
@@ -48,11 +49,16 @@ This dual-process pipeline resolves version incompatibility between the Picamera
 | FER (112×112) | 36.2    | 201.4   |
 | FER (64×64)   | 53.4    | 154.6   |
 
-Real-time pipeline (single face):
+## 📊 Real-Time Inference Performance (Single Face Input)
 
-FD + FER (112×112): 10.9 FPS
+Average **back-end multitask inference throughput**, measured on Raspberry Pi 5:
 
-FD + FER (64×64): 8.7 FPS
+- **FD + FER (112×112)**: 10.9 FPS  
+- **FD + FER (64×64)**: 8.7 FPS  
+
+> ⚙️ These values represent the average processing speed of the **back-end multitask pipeline** — from the moment when the Python 3.9 virtual environment receives a JPEG image frame (via ZeroMQ), to the completion of face detection and expression recognition, and returning the result to Python 3.11.  
+> 
+> ⚠️ This definition **excludes** front-end overhead such as camera capture (Picamera2), JPEG encoding, and final display. It reflects only the throughput of the actual inference pipeline.
 
 ## 📄 Citation
 
