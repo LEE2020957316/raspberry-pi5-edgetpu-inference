@@ -24,3 +24,5 @@ We present a unified benchmarking and deployment framework for running multiple 
 
 This dual-process pipeline resolves version incompatibility between the Picamera2 library (Python 3.11) and the PyCoral runtime (Python 3.9), while ensuring low-latency communication and real-time feedback.
 
+📊 Performance Summary
+
