@@ -53,3 +53,9 @@ Real-time pipeline (single face):
 FD + FER (112×112): 10.9 FPS
 
 FD + FER (64×64): 8.7 FPS
+
+## 📄 Citation
+
+This repository contains the implementation described in a paper currently under submission to **FPT 2025**.
+
+Please do not cite until the paper is formally accepted.
