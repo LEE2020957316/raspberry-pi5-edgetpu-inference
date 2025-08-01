@@ -17,3 +17,7 @@ We present a unified benchmarking and deployment framework for running multiple 
 - Real-time camera processing at up to 10.9 FPS (FD+FER, 112×112)
 - Edge TPU acceleration using PyCoral and precompiled `.edgetpu.tflite` models
 - Supports multiple faces per frame, with scalable FER throughput
+
+## 🖥️ Inference Pipeline Architecture
+
+[Raspberry Pi Camera] → Python 3.11 → JPEG → ZeroMQ → Python 3.9 → [Edge TPU] → FD + FER → Result → ZeroMQ → Python 3.11 → Display
