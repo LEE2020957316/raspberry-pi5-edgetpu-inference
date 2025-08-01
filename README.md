@@ -40,7 +40,7 @@ This dual-process pipeline resolves version incompatibility between the Picamera
 
    > ⚠️ PyCoral only provides prebuilt wheels for Python 3.9. Make sure to create a dedicated virtual environment for inference.
 
-📊 Performance Summary
+## 📊 Model Performance Summary
 
 | Model         | CPU FPS | TPU FPS |
 | ------------- | ------- | ------- |
